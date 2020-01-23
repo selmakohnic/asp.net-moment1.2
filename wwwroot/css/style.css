@@ -1,0 +1,123 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 2em;
+}
+
+header img {
+    width: 16em;
+    float: left;
+}
+
+header p {
+    float: right;
+}
+
+#container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+#navContainer {
+    float: left;
+    width: 20%;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+nav ul li {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: lightgray;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li:hover a {
+    color: white;
+}
+
+nav ul li:hover{
+    background-color: black;
+}
+
+main {
+    float: right;
+    width: 70%;
+    margin-bottom: 2em;
+}
+
+main h1 {
+    margin-top: 0;
+}
+
+sup {
+    color: blue;
+}
+
+#sources {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+#sources ol {
+    margin-top: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    #navContainer, main {
+        float: none;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    header img {
+        width: 14em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    header img, header p {
+        float: none;
+    }
+}

@@ -1,0 +1,34 @@
+﻿@{ 
+    var dateToday = DateTime.Now.ToShortDateString();
+}
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+ </head>
+<body>
+    <div id="container">
+        <header>
+            <a href="/" title="Tillbaka till startsidan"><img src="~/img/logga.svg" alt="Logotyp" title="Logotyp" /></a>
+            <p>Dagens datum är: @dateToday</p>
+        </header>
+        <div id="navContainer">
+            <nav>
+                <ul>
+                    <li><a href="/">Startsida</a></li>
+                    <li><a href="/razor">Razor</a></li>
+                    <li><a href="/about">Om</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main>
+            @RenderBody()
+        </main>
+        <footer>
+            <p>Av Selma Kohnic | ASP.NET med C# – DT102G | Kontaka mig via e-post: <a href="mailto:seko1800@student.miun.se" title="Skicka ett mejl till mig">seko1800@student.miun.se</a></p>
+        </footer>
+        <script src="~/js/main.js"></script>
+    </div>
+</body>
+</html>
